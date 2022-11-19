@@ -1,9 +1,20 @@
 # E-commerceWebsite
-This project deals with developing a Virtual website ‘E-commerce Website’. It provides the user with a list of the various products available for purchase in the store. For the convenience of online shopping, a shopping cart is provided to the user. After the selection of the goods, it is sent for the order confirmation process. The system is implemented using Python's web framework Django.
 
-1. Clone this repository into a folder on your computer
-2. Download Python
-3. Open terminal inside the folder with code.
-4. Type pip install -r requirements.txt in the terminal window to install all the requirements to run the app.
-5. Type python manage.py runserver to start a localhost server for the app.
-6. The API is started and now you can use the API routes to give requests.
+このプロジェクトはセンイル広告とsns機能を組み合わせたオタ活プラットフォームサービスを作ること！最初のプロジェクトです。
+ユーザーはログインし、様々な広告と掲示板を閲覧可能です。コメントも。閲覧のみであればログイン不要。stripeで素早い決済を行うことでセンイル広告をより簡単にすることが目的。
+ecサイトに出されたクリエイティブは運営が出稿、期日内に集まった金額をセンイル広告として出稿します。
+外部snsボタンを設置し、ユーザーの中でも広告のクリエイティブを作りたい人は運営とlineなどを通してクリエイティブを送ってもらいます。
+
+このサービスの実装機能(予定含む)
+・画像ファイルのアップロード
+・画像のタグ検索機能
+・オンライン決済
+・掲示板
+・ユーザー認証機能
+・カート、履歴機能
+
+ローカルで見るには
+・レポジトリをクローンして、pythonをダウンロード
+・レポジトリ下で　"source myvenv/bin/activate "  仮想環境立ち上げ
+・" pip install -r requirements.txt "　を実行
+・" python manage.py runserver "　でローカルサーバ立ち上げ
