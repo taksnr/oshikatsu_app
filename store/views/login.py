@@ -27,9 +27,9 @@ class Login(View):
                     Login.return_url = None
                     return redirect ('homepage')
             else:
-                error_message = 'Invalid !!'
+                error_message = 'エラー !!'
         else:
-            error_message = 'Invalid !!'
+            error_message = 'エラー !!'
 
         print (email, password)
         return render (request, 'login.html', {'error': error_message})

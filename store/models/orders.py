@@ -15,6 +15,8 @@ class Order(models.Model):
     phone = models.CharField (max_length=50, default='', blank=True)
     date = models.DateField (default=datetime.datetime.today)
     status = models.BooleanField (default=False)
+    #出稿後のurlつけたい
+    URL = models.CharField(max_length=250, default='', blank=True, null= True)
 
     def placeOrder(self):
         self.save()

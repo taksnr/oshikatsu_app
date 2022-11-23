@@ -19,6 +19,7 @@
                     <th>個数</th>
                     <th>合計</th>
                     <th>ステータス</th>
+                    <th>URL</th>
                 </tr>
             </thead>
             <tbody>
@@ -36,6 +37,7 @@
                     <td><small class="badge badge-success">完了</small></td>
                     {%else%}
                     <td><small class="badge badge-warning">支払い中</small></td>
+                    <td><a href="">{{order.URL}}</a></td>
                     {% endif %}
                 </tr>
 

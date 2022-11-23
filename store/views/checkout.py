@@ -27,5 +27,5 @@ class CheckOut(View):
                           quantity=cart.get(str(product.id)))
             order.save()
         request.session['cart'] = {}
-
-        return redirect('cart')
+#購入後履歴に飛ばす
+        return redirect('orders')
