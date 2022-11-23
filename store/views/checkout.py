@@ -28,4 +28,5 @@ class CheckOut(View):
             order.save()
         request.session['cart'] = {}
 #購入後履歴に飛ばす
+#addressを追加して欲しい機能、phoneをその他要望に変更
         return redirect('orders')

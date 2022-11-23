@@ -61,7 +61,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">
-              Check Out Form
+              お支払い
           </h5>
           <hr>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -73,12 +73,12 @@
             <form action="/check-out" method="POST">
                 {% csrf_token %}
                 <div class="form-group">
-                  <label for="">Address</label>
+                  <label for="">追加して欲しい機能</label>
                   <input type="text" name="address" id="" class="form-control" placeholder="" aria-describedby="helpId">
                   
                 </div>
                 <div class="form-group">
-                    <label for="">Phone</label>
+                    <label for="">その他要望</label>
                     <input type="text" name="phone" id="" class="form-control" placeholder="" aria-describedby="helpId">
                   </div>
 
