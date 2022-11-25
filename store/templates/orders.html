@@ -15,9 +15,6 @@
                     <th>画像</th>
                     <th>名前</th>
                     <th>日付</th>
-                    <th>金額</th>
-                    <th>個数</th>
-                    <th>合計</th>
                     <th>ステータス</th>
                     <th>URL</th>
                 </tr>
@@ -30,14 +27,15 @@
                     <td><img style="height: 80px;" class="rounded-circle" src="{{order.product.image.url}}" alt=""></td>
                     <td>{{order.product.name}}</td>
                     <td>{{order.date}}</td>
-                    <td>{{order.price|currency}}</td>
-                    <td>{{order.quantity}}</td>
-                    <td>{{order.quantity|multiply:order.price|currency}}</td>
+                    
                     {% if order.status %}
                     <td><small class="badge badge-success">完了</small></td>
                     {%else%}
                     <td><small class="badge badge-warning">支払い中</small></td>
-                    <td><a href="">{{order.URL}}</a></td>
+
+                    <td>{{product.URL}}</td>
+                    
+                  
                     {% endif %}
                 </tr>
 

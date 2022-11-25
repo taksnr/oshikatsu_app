@@ -43,7 +43,7 @@
 								{% csrf_token %}
 								<input hidden type="text" name='product' value='{{product.id}}'>
 								<input hidden type="text" name='remove' value='True'>
-								<input type="submit" value=" - " class="btn btn-block btn-success border-right">
+								<input type="submit" value=" - " class="btn btn-block btn-success  border-right">
 							</form>
 							<div class="text-center col btn btn-success">{{product|cart_quantity:request.session.cart}} in Cart</div>
 							<form action="/#{{product.id}}" class="col-2 " method="post">
@@ -57,7 +57,7 @@
 							{% csrf_token %}
 							<input hidden type="text" name='product' value='{{product.id}}'>
 							<input type="submit" class="float-right btn btn-success form-control"
-								value="Add To Cart">
+								value="カートに入れる">
 						</form>
 						{% endif %}
 
