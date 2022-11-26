@@ -38,9 +38,12 @@
         </table>
         <hr>
         <div class="m-3 p-3">
-            <a href="https://buy.stripe.com/test_fZe6rB0Kg5Tm10c145" class="btn btn-outline-success border rounded  col-lg-3 float-right">お支払い</a>
+        {% csrf_token %}
+            <a href="https://buy.stripe.com/test_fZe6rB0Kg5Tm10c145" target="_blank" class="btn btn-outline-success border rounded  col-lg-3 float-right">お支払い</a>
             
         </div>
+        
+      
    </div>
 </div>
 

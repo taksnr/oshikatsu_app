@@ -14,6 +14,7 @@ class Order(models.Model):
     status = models.BooleanField (default=False)
     #出稿後のurlつけたい
 
+
     def placeOrder(self):
         self.save()
 

@@ -4,9 +4,10 @@
 {% block content %}
 {% load cart %}
 {% load custom_filter %}
+
 <div class="container">
    <div class="border rounded p-4 m-4">
-        <p class="display-4 pl-4 ml-4">応援履歴</p>
+        <p class="display-10 pl- ml-4">応援履歴</p>
         <hr>
         <table class="table">
             <thead>
@@ -33,7 +34,7 @@
                     {%else%}
                     <td><small class="badge badge-warning">支払い中</small></td>
 
-                    <td>{{product.URL}}</td>
+                    <td>{{order.product.URL}}</td>
                     
                   
                     {% endif %}
